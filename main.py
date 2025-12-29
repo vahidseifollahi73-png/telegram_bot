@@ -2,12 +2,12 @@ from pyrogram import Client, filters
 import re
 import os
 
-api_id = int(os.getenv("8327438764"))
-api_hash = os.getenv("f4303b629cb74e168e13c6a57b02c27a")
-bot_token = os.getenv("7953569430:AAEUMMKOO-q2RuzvgSUiBvzO9As8IxAwtcY")
+api_id = int(os.getenv("API_ID"))
+api_hash = os.getenv("API_HASH")
+bot_token = os.getenv("BOT_TOKEN")
 
-DEST = os.getenv("chanel907")          # مثلا: mydestchannel
-SIGNATURE = os.getenv("@chanel907")        # مثلا: @MyDestChannel
+DEST = os.getenv("DEST_CHANNEL")          # مثلا: mydestchannel
+SIGNATURE = os.getenv("SIGNATURE")        # مثلا: @MyDestChannel
 
 app = Client("newsbot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
